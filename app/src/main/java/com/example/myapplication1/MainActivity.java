@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         sum+=1;
         TextView show=findViewById(R.id.textView4);
         show.setText(String.valueOf(sum));
+        sum--;
     }
     public void plus2(View v){
         sum+=2;

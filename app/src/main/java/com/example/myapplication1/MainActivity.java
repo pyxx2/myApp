@@ -2,6 +2,7 @@ package com.example.myapplication1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -13,8 +14,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-    }
+        Intent intent=getIntent();
+        String value=intent.getStringExtra("name1");
+        double result=Double.parseDouble(value);
+        result=result/7.23;
 
+
+    }
     public void myClick(View v){
         sum=0;
         TextView show=findViewById(R.id.textView4);

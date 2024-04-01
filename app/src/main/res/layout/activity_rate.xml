@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".rateActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="汇率转换器"
+            android:textSize="36sp"
+            />
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:hint="input RMB"/>
+
+        <TextView
+            android:id="@+id/show"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:hint="Result" />
+
+        <Button
+            android:id="@+id/dollar"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="dollar"
+            android:layout_marginBottom="10dp"
+            android:layout_height="50dp"
+            android:onClick="myClick"/>
+        <Button
+            android:id="@+id/euro"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="euro"
+            android:layout_marginBottom="10dp"
+            android:layout_height="50dp"
+            android:onClick="myClick2"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="won"
+            android:onClick="myClick3"
+            android:id="@+id/won"/>
+        <Button
+            android:id="@+id/transmitd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="dollor传"
+            android:onClick="chuan1"/>
+        <Button
+            android:id="@+id/transmite"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="euro传"
+            android:onClick="chuan2"/>
+        <Button
+            android:id="@+id/transmitw"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="won传"
+            android:onClick="chuan3"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

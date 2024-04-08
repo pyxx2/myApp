@@ -14,7 +14,7 @@
         <TextView
             android:id="@+id/title"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
             android:text="CourtCounter"
             android:textStyle="bold"
             android:textSize="24sp" />
@@ -43,10 +43,10 @@
                 <TextView
                     android:id="@+id/scoreA"
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
+                    android:layout_height="80dp"
                     android:gravity="center"
                     android:text="0"
-                    android:textSize="100dp"
+                    android:textSize="50dp"
                     android:textStyle="bold" />
 
                 <Button
@@ -104,10 +104,10 @@
                 <TextView
                     android:id="@+id/scoreB"
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
+                    android:layout_height="80dp"
                     android:gravity="center"
                     android:text="0"
-                    android:textSize="100dp"
+                    android:textSize="50dp"
                     android:textStyle="bold" />
 
                 <Button
@@ -147,7 +147,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="70dp"
             android:layout_marginRight="70dp"
-            android:layout_marginBottom="32dp"
+
             android:onClick="clickReset"
             android:text="Reset" />
     </LinearLayout>

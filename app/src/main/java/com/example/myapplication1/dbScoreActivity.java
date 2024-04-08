@@ -14,6 +14,21 @@ public class dbScoreActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_db_score);
     }
+    protected void  onSaveInstanceState(Bundle outState){
+        super.onSaveInstanceState(outState);
+
+        outState.putInt("teama",suma);//暂时保存在teama和teamb里面
+        outState.putInt("teamb",sumb);
+    }
+    protected void onRestoreInstanceState(Bundle saveInstanceState){
+        super.onRestoreInstanceState(saveInstanceState);
+        suma=saveInstanceState.getInt("teama");//取出保存的数据重新加载
+        sumb=saveInstanceState.getInt("teamb");
+        TextView show =findViewById(R.id.scoreA);
+        TextView show2 =findViewById(R.id.scoreB);
+        show.setText(String.valueOf(suma));
+        show2.setText(String.valueOf(sumb));
+    }
     public void click1(View v){
 
         TextView show =findViewById(R.id.scoreA);

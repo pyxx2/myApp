@@ -53,7 +53,7 @@ public class rateActivity extends AppCompatActivity implements Runnable{
             }
         };
 
-        Thread t= new Thread(this);
+        Thread t = new Thread(this);
         t.start();
         Log.i(TAG,"on create:t.start()........");
     }
